@@ -99,7 +99,7 @@ function App() {
     void deleteDocumentFiles(data.documents.filter((document) => document.hasStoredFile).map((document) => document.id))
     setDataState(resetData(activePatient))
     setResetOpen(false)
-    notify(patient?.seeded ? 'Sharon was reset to the bundled dataset.' : 'Patient tracker cleared.')
+    notify(patient?.seeded ? 'Example patient was reset to the bundled dataset.' : 'Patient tracker cleared.')
   }
 
   const latestScan = [...data.timeline].filter((row) => /CT|PET/i.test(row.documentType)).sort((a, b) => b.date.localeCompare(a.date))[0]

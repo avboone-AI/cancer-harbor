@@ -11,11 +11,11 @@ export interface PatientProfile {
 const PATIENTS_KEY = 'cancer-harbor-patients-v1'
 const ACTIVE_PATIENT_KEY = 'cancer-harbor-active-patient-v1'
 const DATA_PREFIX = 'cancer-harbor-tracker-v1:'
-const SHARON_ID = 'sharon-boone'
+const DEMO_PATIENT_ID = 'example-patient'
 
 const defaultPatients: PatientProfile[] = [{
-  id: SHARON_ID,
-  name: 'Sharon Boone',
+  id: DEMO_PATIENT_ID,
+  name: 'Example Patient',
   createdAt: '2026-06-29T12:00:00.000Z',
   seeded: true,
 }]
@@ -44,7 +44,7 @@ export function savePatients(patients: PatientProfile[]) {
 }
 
 export function getActivePatientId() {
-  return localStorage.getItem(ACTIVE_PATIENT_KEY) || SHARON_ID
+  return localStorage.getItem(ACTIVE_PATIENT_KEY) || DEMO_PATIENT_ID
 }
 
 export function setActivePatientId(id: string) {
@@ -55,9 +55,9 @@ export function loadData(patientId: string): TrackerData {
   try {
     const saved = localStorage.getItem(`${DATA_PREFIX}${patientId}`)
     if (saved) return JSON.parse(saved)
-    return patientId === SHARON_ID ? structuredClone(seed as TrackerData) : createEmptyData()
+    return patientId === DEMO_PATIENT_ID ? structuredClone(seed as TrackerData) : createEmptyData()
   } catch {
-    return patientId === SHARON_ID ? structuredClone(seed as TrackerData) : createEmptyData()
+    return patientId === DEMO_PATIENT_ID ? structuredClone(seed as TrackerData) : createEmptyData()
   }
 }
 
@@ -71,7 +71,7 @@ export function deletePatientData(patientId: string) {
 
 export function resetData(patientId: string): TrackerData {
   localStorage.removeItem(`${DATA_PREFIX}${patientId}`)
-  return patientId === SHARON_ID ? structuredClone(seed as TrackerData) : createEmptyData()
+  return patientId === DEMO_PATIENT_ID ? structuredClone(seed as TrackerData) : createEmptyData()
 }
 
 export function upsertById<T extends { id: string }>(rows: T[], incoming: T[]): T[] {

@@ -28,7 +28,7 @@ python3 -m http.server 8080
 
 Then visit `http://localhost:8080`.
 
-The health tracker is available at `http://localhost:8080/tracker/`. Sharon Boone's June 2026 dataset is included as the seeded patient, and additional patients can be created from the patient selector. Each patient record is stored separately in that browser.
+The health tracker is available at `http://localhost:8080/tracker/`. An anonymized June 2026 example dataset is included as the seeded patient, and additional patients can be created from the patient selector. Each patient record is stored separately in that browser.
 
 ## Collaborating With Git
 

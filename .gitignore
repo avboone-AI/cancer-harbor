@@ -1,0 +1,4 @@
+tracker-app/node_modules/
+tracker-app/*.tsbuildinfo
+.DS_Store
+.cancer-harbor-server.log

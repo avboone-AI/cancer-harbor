@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Cancer Harbor Project</title>
+    <meta
+      name="description"
+      content="An educational home base for families navigating cancer recurrence, treatment options, clinical trials, and self-advocacy."
+    />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="The Cancer Harbor Project home">
+        <span class="brand-mark">CH</span>
+        <span>
+          <strong>The Cancer Harbor Project</strong>
+          <small>Cancer. Now what?</small>
+        </span>
+      </a>
+      <nav class="top-nav" aria-label="Primary navigation">
+        <a class="tracker-nav-link" href="./tracker/index.html">Health Tracker</a>
+        <a href="#start">Start Here</a>
+        <a href="#advocacy">Advocacy</a>
+        <a href="#trials">Trials Search</a>
+        <a href="#alerts">Alerts</a>
+      </nav>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobileNav">
+        Menu
+      </button>
+    </header>
+
+    <nav id="mobileNav" class="mobile-nav" aria-label="Mobile navigation" hidden>
+      <a href="./tracker/index.html">Health Tracker</a>
+      <a href="#start">Start Here</a>
+      <a href="#advocacy">Advocacy</a>
+      <a href="#trials">Trials Search</a>
+      <a href="#alerts">Alerts</a>
+    </nav>
+
+    <main id="home">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">For patients, spouses, children, and friends trying to move quickly</p>
+          <h1>Cancer came back. You deserve a clearer next step.</h1>
+          <p class="lead">
+            A practical, plain-language guide to understanding treatment options, building a
+            research-ready cancer profile, finding clinical trials, and advocating for the care team
+            to look beyond one hospital's walls.
+          </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button primary" href="./tracker/index.html">Open health tracker</a>
+            <a class="button primary" href="#trials">Search trials</a>
+            <a class="button secondary" href="#profile">Build a profile</a>
+          </div>
+        </div>
+        <aside class="intake-panel" aria-label="Quick planning checklist">
+          <h2>First 48-hour checklist</h2>
+          <ol class="checklist">
+            <li>Confirm the exact diagnosis, stage, biomarkers, and prior treatments.</li>
+            <li>Ask whether molecular/genomic testing is complete and current.</li>
+            <li>Collect recent scans, pathology, labs, treatment timeline, and notes.</li>
+            <li>Search trials by cancer type, mutation, prior treatment, and location.</li>
+            <li>Contact trial teams directly while your oncologist reviews options.</li>
+          </ol>
+          <p class="note">
+            Educational support only. Decisions should be made with qualified clinicians who know the
+            patient's full medical history.
+          </p>
+        </aside>
+      </section>
+
+      <section class="tracker-intro" aria-labelledby="trackerIntroTitle">
+        <div class="tracker-intro-copy">
+          <p class="eyebrow">Personal health tracker</p>
+          <h2 id="trackerIntroTitle">Keep the medical story organized, source by source.</h2>
+          <p>
+            Create a separate local record for each patient, upload oncology reports, review extracted
+            details, and follow treatment, lesions, RECIST response, biomarkers, labs, symptoms, and notes.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="./tracker/index.html">Launch the health tracker</a>
+            <a class="button quiet" href="#profile">Start with a simple profile</a>
+          </div>
+        </div>
+        <div class="tracker-preview" aria-label="Tracker capabilities">
+          <article><span>01</span><strong>Upload & verify</strong><p>PDF, image, text, and Excel intake with a review step before saving.</p></article>
+          <article><span>02</span><strong>See the timeline</strong><p>Treatment periods, scans, measurements, and response in one source-linked view.</p></article>
+          <article><span>03</span><strong>Export & share</strong><p>Create updated Excel or CSV files for appointments and second opinions.</p></article>
+        </div>
+      </section>
+
+      <section id="start" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Start here</p>
+          <h2>You have cancer. Now what?</h2>
+          <p>
+            The goal is not to become your own oncologist. The goal is to become organized enough to
+            ask better questions, move faster, and make sure the full landscape of options is visible.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <article class="step-card">
+            <span class="step-number">1</span>
+            <h3>Name the disease precisely</h3>
+            <p>
+              Cancer type, subtype, stage, grade, biomarkers, mutations, and previous therapies all
+              shape which treatments and trials may be relevant.
+            </p>
+          </article>
+          <article class="step-card">
+            <span class="step-number">2</span>
+            <h3>Build the source packet</h3>
+            <p>
+              Gather pathology reports, scan reports, lab trends, treatment dates, medication list,
+              performance status notes, and genomic testing results.
+            </p>
+          </article>
+          <article class="step-card">
+            <span class="step-number">3</span>
+            <h3>Map standard options</h3>
+            <p>
+              Ask what the usual next treatment is, what it is expected to do, what alternatives
+              exist, and what information would change the plan.
+            </p>
+          </article>
+          <article class="step-card">
+            <span class="step-number">4</span>
+            <h3>Search outside the building</h3>
+            <p>
+              Hospitals often know their own trials best. A separate search can reveal nearby,
+              regional, national, virtual, or biomarker-specific opportunities.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section flow-section" aria-labelledby="flowTitle">
+        <div class="section-heading compact">
+          <p class="eyebrow">Decision flow</p>
+          <h2 id="flowTitle">When first-line treatment stops working</h2>
+        </div>
+        <div class="flow-chart" role="list">
+          <div class="flow-node" role="listitem">
+            <strong>Progression confirmed</strong>
+            <span>Review scans, symptoms, and whether a biopsy is needed.</span>
+          </div>
+          <div class="flow-arrow" aria-hidden="true"></div>
+          <div class="flow-node" role="listitem">
+            <strong>Re-check biology</strong>
+            <span>Ask about repeat molecular testing, resistance mutations, and new biomarkers.</span>
+          </div>
+          <div class="flow-arrow" aria-hidden="true"></div>
+          <div class="flow-node" role="listitem">
+            <strong>Compare paths</strong>
+            <span>Standard treatment, off-label rationale, second opinion, clinical trial.</span>
+          </div>
+          <div class="flow-arrow" aria-hidden="true"></div>
+          <div class="flow-node highlight" role="listitem">
+            <strong>Trial outreach</strong>
+            <span>Contact coordinators with a concise history and ask about screening criteria.</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="advocacy" class="section split-section">
+        <div>
+          <p class="eyebrow">Self-advocacy</p>
+          <h2>Being an advocate means making the system easier to navigate.</h2>
+          <p>
+            Advocacy is not being difficult. It is keeping a clear record, asking what else should be
+            considered, pushing for timely answers, and making sure each specialist sees the same
+            facts.
+          </p>
+        </div>
+        <div class="advocacy-list">
+          <article>
+            <h3>Questions to ask</h3>
+            <ul>
+              <li>What evidence says this is the best next option?</li>
+              <li>Are there trials elsewhere that fit this cancer profile?</li>
+              <li>What biomarkers or test results would open or close options?</li>
+              <li>How quickly do we need to decide?</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Records to control</h3>
+            <ul>
+              <li>Diagnosis and pathology reports</li>
+              <li>Genomic or biomarker test results</li>
+              <li>Prior therapies, dates, response, and side effects</li>
+              <li>Recent imaging and lab reports</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="profile" class="section profile-builder">
+        <div class="section-heading">
+          <p class="eyebrow">Patient profile</p>
+          <h2>Build a trial-ready summary</h2>
+          <p>
+            This prototype keeps information in your browser only. A production version should use
+            HIPAA-aware hosting, encrypted storage, consent controls, audit logs, and careful access
+            policies before collecting health information.
+          </p>
+        </div>
+
+        <form id="profileForm" class="profile-form">
+          <label>
+            Cancer type
+            <input name="cancerType" type="text" placeholder="e.g., metastatic colorectal cancer" />
+          </label>
+          <label>
+            Biomarkers / mutations
+            <input name="biomarkers" type="text" placeholder="e.g., KRAS G12D, HER2+, MSI-H" />
+          </label>
+          <label>
+            Prior treatments
+            <textarea
+              name="priorTreatments"
+              rows="4"
+              placeholder="List treatment names, dates, response, and why stopped"
+            ></textarea>
+          </label>
+          <label>
+            Location
+            <input name="location" type="text" placeholder="City, state, or ZIP" />
+          </label>
+          <label>
+            Travel radius
+            <select name="radius">
+              <option value="50">Within 50 miles</option>
+              <option value="100">Within 100 miles</option>
+              <option value="250">Within 250 miles</option>
+              <option value="any">Anywhere / remote options</option>
+            </select>
+          </label>
+          <label class="file-input">
+            Upload records for future parsing
+            <input name="records" type="file" multiple accept=".pdf,.doc,.docx,.txt,.jpg,.jpeg,.png" />
+            <span>PDFs, visit summaries, pathology reports, lab reports, scan reports</span>
+          </label>
+          <button class="button primary" type="button" id="saveProfile">Save browser profile</button>
+        </form>
+
+        <div class="mychart-guide">
+          <h3>MyChart record access</h3>
+          <p>
+            Directly connecting to a patient's MyChart account is not a simple website permission.
+            Most production apps would need patient authorization, health-system integration, and
+            strict privacy/security review. For an early version, guide users to export or share
+            records from MyChart instead.
+          </p>
+          <div class="resource-links">
+            <a href="https://www.mychart.org/Sharing-Your-Medical-Record" target="_blank" rel="noreferrer">
+              MyChart sharing overview
+            </a>
+            <a href="https://shareeverywhere.epic.com/FAQ" target="_blank" rel="noreferrer">
+              Epic Share Everywhere FAQ
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="trials" class="section trials-section">
+        <div class="section-heading">
+          <p class="eyebrow">Trials search</p>
+          <h2>Search recruiting studies</h2>
+          <p>
+            This searches ClinicalTrials.gov's public API and builds a starter outreach email for
+            each result. A full aggregator can also add NCI-supported trial data and institution
+            feeds.
+          </p>
+        </div>
+
+        <form id="trialSearchForm" class="trial-search">
+          <label>
+            Condition or cancer type
+            <input id="conditionInput" type="text" value="breast cancer" required />
+          </label>
+          <label>
+            Other keywords
+            <input id="keywordInput" type="text" placeholder="mutation, drug, phase, trial keyword" />
+          </label>
+          <label>
+            Location
+            <input id="locationInput" type="text" placeholder="City, state, or ZIP" />
+          </label>
+          <button class="button primary" type="submit">Search live trials</button>
+        </form>
+
+        <div class="trial-meta">
+          <span id="trialStatus">Ready to search.</span>
+          <div class="resource-links">
+            <a href="https://clinicaltrials.gov/" target="_blank" rel="noreferrer">ClinicalTrials.gov</a>
+            <a href="https://www.cancer.gov/research/participate/clinical-trials-search" target="_blank" rel="noreferrer">
+              NCI trial search
+            </a>
+          </div>
+        </div>
+
+        <div id="trialResults" class="trial-results" aria-live="polite"></div>
+      </section>
+
+      <section id="alerts" class="section alerts-section">
+        <div>
+          <p class="eyebrow">Updates</p>
+          <h2>Email alerts for news and nearby treatment openings</h2>
+          <p>
+            A production system can run scheduled searches against trial APIs, NCI updates, FDA
+            approvals, cancer-center feeds, and saved patient profiles. This front-end form shows the
+            intended subscription experience.
+          </p>
+        </div>
+        <form id="alertForm" class="alert-form">
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com" required />
+          </label>
+          <label>
+            Cancer focus
+            <input type="text" name="focus" placeholder="Cancer type, mutation, or treatment area" />
+          </label>
+          <fieldset>
+            <legend>Send alerts for</legend>
+            <label class="checkbox">
+              <input type="checkbox" name="news" checked />
+              Research news and approvals
+            </label>
+            <label class="checkbox">
+              <input type="checkbox" name="trials" checked />
+              New nearby trial or treatment options
+            </label>
+          </fieldset>
+          <button class="button primary" type="submit">Create alert prototype</button>
+          <p id="alertMessage" class="form-message" role="status"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>The Cancer Harbor Project</strong>
+        <p>Education, organization, and faster questions for families facing cancer recurrence.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://clinicaltrials.gov/data-api" target="_blank" rel="noreferrer">ClinicalTrials.gov API</a>
+        <a href="https://www.cancer.gov/syndication/api" target="_blank" rel="noreferrer">NCI API</a>
+        <a href="#home">Back to top</a>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

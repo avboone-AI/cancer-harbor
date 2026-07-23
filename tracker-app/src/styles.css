@@ -243,3 +243,163 @@ footer{color:#77725d;border-color:#d8cfad}
 .delete-confirm{border:1px solid #8d4a36;background:#b86345;color:#fff8e8;border-radius:16px 10px 15px 11px;padding:10px 15px;display:inline-flex;align-items:center;gap:8px;font-weight:700;box-shadow:2px 2px 0 #d5b18d}
 @media(max-width:780px){.resource-home{display:none}.patient-switcher{margin-left:auto;margin-right:7px}.patient-switcher select{min-width:0;width:118px;padding-right:22px}.patient-switcher button{width:33px;height:33px}.export-button{font-size:0}.export-button svg{margin:0}}
 @media(max-width:430px){.patient-switcher select{width:100px}.topbar{padding-inline:10px;gap:4px}.menu-button{margin-right:2px}.patient-switcher{gap:3px;margin-right:3px}.export-button{padding:8px}}
+
+/* Hobbiton-by-the-sea refresh */
+:root{
+  --green:#3d725e;
+  --green-dark:#1d4650;
+  --cream:#eef7f7;
+  --paper:#fffdf7;
+  --sage:#b4cfa7;
+  --sage-pale:#dcebc8;
+  --moss:#5d7852;
+  --clay:#b95f3d;
+  --ochre:#d6a33d;
+  --sky:#cce7ec;
+  --sea:#2f7f91;
+  --foam:#f8fdfc;
+  --ink:#19333b;
+  --line:#c3d6d8;
+  background:#eef7f7;
+}
+body{
+  color:var(--ink);
+  background:
+    radial-gradient(ellipse at 92% -5%,#d7edf1 0 17%,transparent 17.4%),
+    radial-gradient(ellipse at 72% 3%,#f6fdfb 0 20%,transparent 20.4%),
+    radial-gradient(ellipse at 12% 100%,#dce8c7 0 24%,transparent 24.4%),
+    #eef7f7;
+}
+main{
+  background:
+    radial-gradient(ellipse at 105% 5%,#d2edf1 0 14%,transparent 14.4%),
+    radial-gradient(ellipse at 88% 7%,#f5fbfa 0 18%,transparent 18.4%),
+    linear-gradient(180deg,#f9fefd 0,#edf8f8 48%,#eef2d4 100%);
+}
+main::before{
+  opacity:.5;
+  background:
+    radial-gradient(ellipse at 8% 100%,#dce8c7 0 18%,transparent 18.5%),
+    radial-gradient(ellipse at 32% 120%,#bdd7c5 0 24%,transparent 24.5%),
+    radial-gradient(ellipse at 78% 115%,#b9dde2 0 22%,transparent 22.5%);
+}
+.sidebar{
+  background:
+    radial-gradient(ellipse at 12% 104%,#3c765f 0 24%,transparent 24.5%),
+    radial-gradient(ellipse at 94% 106%,#2f7f91 0 30%,transparent 30.5%),
+    linear-gradient(180deg,#173843 0%,#1d4650 58%,#315d4e 100%);
+  border-color:#7eb4ba;
+  box-shadow:5px 0 22px #18465124;
+}
+.sidebar::before{
+  border-color:#9ed3d9;
+}
+.brand-mark{
+  background:linear-gradient(145deg,#f0ce78,#9ed3d9);
+  color:#123f4e;
+  border-color:#f6e3a7;
+  box-shadow:3px 3px 0 #0e3039;
+}
+.brand span,
+nav button,
+.privacy-card span,
+.sidebar-foot{
+  color:#c8e3e4;
+}
+nav button:hover{background:#2a6570;color:#fffdf7}
+nav button.active{
+  color:#173843;
+  background:#d9eef1;
+  border-color:#9bcbd1;
+  box-shadow:3px 3px 0 #123943;
+}
+.privacy-card{
+  color:#173843;
+  background:#d9eef1;
+  border-color:#9bcbd1;
+  box-shadow:3px 3px 0 #123943;
+}
+.privacy-card svg{color:#2f8290}.privacy-card span{color:#4f6d72}
+.topbar{
+  background:#fafefff0;
+  border-color:#c3d6d8;
+}
+.resource-home,
+.global-search,
+.card-head button,
+.latest-card>button,
+.source-link{
+  color:#2c6c78;
+}
+.export-button,.secondary{
+  color:#235b6a;
+  background:#f8fdfc;
+  border-color:#a9cdd1;
+  box-shadow:2px 2px 0 #cce4e4;
+}
+.export-button:hover,.secondary:hover{background:#e8f6f6}
+.page-head h1{color:#173843}
+.page-head h1::after{color:#2f91a3}
+.page-head p{color:#60727a}.eyebrow{color:#8d6933}
+.primary,
+.patient-switcher button{
+  color:#fffdf7;
+  background:linear-gradient(145deg,#2f7c8c,#3d725e);
+  border-color:#164b5b;
+  box-shadow:3px 3px 0 #b9d9d8;
+}
+.primary:hover{background:#2a6570;box-shadow:2px 2px 0 #b9d9d8}
+.hero-card{
+  border-color:#2a5c67;
+  background:
+    radial-gradient(circle at 79% 2%,#f0cc72 0 16%,transparent 16.5%),
+    radial-gradient(ellipse at 96% 128%,#73b7c0 0 35%,transparent 35.5%),
+    radial-gradient(ellipse at 67% 122%,#7db096 0 37%,transparent 37.5%),
+    linear-gradient(118deg,#205c67,#4f7c62);
+  box-shadow:5px 6px 0 #b9d9d8,0 14px 32px #2b5f6a18;
+}
+.hero-card::before{
+  background:#f0cc72;
+  box-shadow:0 0 42px #f7e2a3;
+}
+.hero-kicker,.hero-card p,.hero-response>span,.hero-response small{color:#d8eff0}
+.hero-card .badge{background:#f8fdfc;color:#235b6a;border-color:#b7d9dc}
+.pulse-dot{background:#9ed3d9;box-shadow:0 0 0 5px #9ed3d933}
+.stat-card,.chart-card,.latest-card,.windows-card,.mini-chart-card,.inline-chart,.recist-chart,.response-card,.table-card,.drop-zone,.paste-card,.workflow,.audit-cards>div{
+  border-color:#c3d6d8;
+  background:#fffdf7;
+  box-shadow:3px 4px 0 #cce4e4;
+}
+.stat-card:nth-child(1){background:#edf8f7}.stat-card:nth-child(2){background:#fff5df}.stat-card:nth-child(3){background:#e4f3f6}.stat-card:nth-child(4){background:#edf3d7}
+.stat-icon.teal,.audit-cards svg{background:#d8edf0;color:#2f7480}
+.stat-icon.rust{background:#f5e2d5;color:#ad5d3d}.stat-icon.blue{background:#dcecf7;color:#3f6f8f}.stat-icon.amber{background:#f6e8bd;color:#85662a}
+.card-head h3,.inline-chart h3,.recist-chart h3,.stat-card>strong,.audit-cards strong{color:#193d45}
+.measurement-callout,.local-banner,.recist-review,.measurement-review{
+  background:#e4f3f6;
+  border-color:#b2d3d8;
+  color:#315e68;
+}
+.drop-zone{background:#f1faf9;border-color:#8ebfc6}
+.drop-zone.dragging{background:#def1f3;border-color:#2f7f91}
+.upload-mark,.workflow>div>span{background:#d8edf0;color:#2f7480;border-color:#9ecbd2}
+.paste-card textarea,.form-field input,.form-field textarea,.form-field select,.patient-switcher select,.search-box{
+  background:#fffefe;
+  border-color:#b7ced1;
+}
+.table-tools{background:#f3fbfa;border-color:#c3d6d8;color:#64767a}
+th{background:#dceff1;color:#335f68;border-color:#accfd4}
+td{border-color:#e0ecec;color:#4d6065}
+tr:nth-child(even) td{background:#f7fcfb}tr:hover td{background:#e8f6f6}
+.response-card{background:#e8f6f6}.response-card>strong{color:#2f7c8c}
+.modal{background:#fbfffe;border-color:#c3d6d8;box-shadow:7px 8px 0 #173843,0 28px 90px #071a1655}
+.icon-button{background:#e4f3f6;color:#315e68}
+.toast{background:#1d4650;border-color:#9ed3d9;box-shadow:4px 4px 0 #b9d9d8}
+footer{border-color:#c3d6d8;color:#65777b}
+.patient-switcher select{color:#235b6a;background:#f8fdfc;border-color:#a9cdd1}
+.patient-switcher .delete-patient,.delete-confirm{box-shadow:2px 2px 0 #e3b9a8}
+
+@media(max-width:780px){
+  body{background:#eef7f7}
+  main{background:linear-gradient(180deg,#f9fefd 0,#edf8f8 66%,#eef2d4 100%)}
+  .hero-card{box-shadow:4px 5px 0 #b9d9d8}
+}
